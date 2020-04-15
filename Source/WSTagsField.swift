@@ -203,6 +203,12 @@ open class WSTagsField: UIScrollView {
 
         return false
     }
+    
+    open var texFieldTagAttribute: Int = 0 {
+        didSet {
+            textField.tag = texFieldTagAttribute
+        }
+    }
 
     open fileprivate(set) var tags = [WSTag]()
     internal var tagViews = [WSTagView]()
