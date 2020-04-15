@@ -22,7 +22,7 @@ public struct WSTagAcceptOption: OptionSet {
 
 open class WSTagsField: UIScrollView {
 
-    fileprivate let textField = BackspaceDetectingTextField()
+    public let textField = BackspaceDetectingTextField()
 
     /// Dedicated text field delegate.
     open weak var textDelegate: UITextFieldDelegate?
