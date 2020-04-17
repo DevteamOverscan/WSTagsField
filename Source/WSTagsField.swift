@@ -400,7 +400,6 @@ open class WSTagsField: UIScrollView {
 
         tagView.onDidRequestDelete = { [weak self] tagView, replacementText in
             // First, refocus the text field
-            self?.textField.becomeFirstResponder()
             if (replacementText?.isEmpty ?? false) == false {
                 self?.textField.text = replacementText
             }
